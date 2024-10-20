@@ -24,7 +24,7 @@ connectToDB()
 
 
 // middlewares
-server.use(cors({origin:'*',credentials:true,exposedHeaders:['X-Total-Count'],methods:['GET','POST','PATCH','DELETE']}))
+server.use(cors({origin:'https://access-cart-frontend-v2xf.vercel.app',credentials:true,exposedHeaders:['X-Total-Count'],methods:['GET','POST','PATCH','DELETE']}))
 server.use(express.json())
 server.use(cookieParser())
 server.use(morgan("tiny"))
